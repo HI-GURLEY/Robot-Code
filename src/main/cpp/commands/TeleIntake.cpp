@@ -1,8 +1,8 @@
 #include "commands/TeleIntake.h"
 
-TeleIntake::TeleIntake(IntakeSubsystem* subsystem, frc::XboxController* controller)
-	: m_intake(subsystem)
-	, m_controller(controller) {
+TeleIntake::TeleIntake(frc::XboxController* controller, IntakeSubsystem* subsystem)
+	: m_controller(controller)
+	, m_intake(subsystem) {
 	AddRequirements({ subsystem });
 }
 

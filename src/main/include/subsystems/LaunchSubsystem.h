@@ -7,7 +7,7 @@
 #include <frc/Watchdog.h>
 #include <frc2/command/CommandPtr.h>
 #include <frc2/command/SubsystemBase.h>
-#include <rev/CANSparkMax.h>
+#include <rev/SparkMax.h>
 #include <units/voltage.h>
 
 #include <cmath>
@@ -45,6 +45,6 @@ public:
 
 private:
 	// Motor Controllers
-	rev::CANSparkMax m_launchMotor;
-	rev::CANSparkMax m_pushMotor;
+	rev::spark::SparkMax m_launchMotor;
+	rev::spark::SparkMax m_pushMotor;
 };

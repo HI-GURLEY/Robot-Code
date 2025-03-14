@@ -10,7 +10,7 @@ RobotContainer::RobotContainer() {
 	m_climber.SetDefaultCommand(TeleClimb(&m_climber, &m_driverController));
 
 	m_launch.SetDefaultCommand(TeleShoot(&m_launch, &m_manipulatorController));
-	m_intake.SetDefaultCommand(TeleIntake(&m_intake, &m_manipulatorController));
+	m_intake.SetDefaultCommand(TeleIntake(&m_manipulatorController, &m_intake));
 }
 
 void RobotContainer::ConfigureBindings() { }

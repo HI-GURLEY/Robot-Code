@@ -60,11 +60,9 @@ private:
 	// Motor Controllers
 	frc::VictorSP m_frontLeft;
 	frc::VictorSP m_rearLeft;
-	frc::MotorControllerGroup m_left { m_frontLeft, m_rearLeft };
 
 	frc::VictorSP m_frontRight;
 	frc::VictorSP m_rearRight;
-	frc::MotorControllerGroup m_right { m_frontRight, m_rearRight };
 
 	// Gyro
 	frc::ADXRS450_Gyro m_gyro;

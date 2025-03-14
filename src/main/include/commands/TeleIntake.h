@@ -18,7 +18,7 @@ public:
 	 * @param[in] subsystem The subsytem to use.
 	 * @param[in] controller Accepts a frc::XboxController* object, used to controll the movements.
 	 */
-	explicit TeleIntake(IntakeSubsystem* subsystem, frc::XboxController* controller);
+	explicit TeleIntake(frc::XboxController* controller, IntakeSubsystem* subsystem);
 
 	void Initialize() override;
 
